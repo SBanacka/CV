@@ -36,6 +36,9 @@ body {
   font-family: sans-serif;
 }
 
+div{
+  margin:auto;
+}
 p {
   width: 80%;
 }
@@ -59,12 +62,41 @@ h3 {
   margin: 0 auto auto;
   text-align: center;
 }
+/*Small link navigation animation
+*/
 
-/*Link animation
+.poke{
+  border-radius: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+.poke:hover{
+  animation-name: grow;
+  animation-duration: 0.3s;
+}
+
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/*Navigation animation
 */
 
 .tickle{
-  border-radius: 10px;
   width: max-content;
   height: max-content;
 }
